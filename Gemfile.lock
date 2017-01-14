@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/coinbase/coinbase-exchange-ruby.git
+  revision: ad36d295e835178f2cc230404b6931e382f9002a
+  specs:
+    coinbase-exchange (0.1.2)
+      bigdecimal
+      em-http-request
+      faye-websocket
+
 PATH
   remote: .
   specs:
@@ -15,10 +24,6 @@ GEM
     codeclimate-test-reporter (0.6.0)
       simplecov (>= 0.7.1, < 1.0.0)
     coderay (1.1.1)
-    coinbase-exchange (0.1.2)
-      bigdecimal
-      em-http-request
-      faye-websocket
     cookiejar (0.3.3)
     diff-lcs (1.2.5)
     docile (1.1.5)
@@ -91,6 +96,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.7)
   codeclimate-test-reporter (~> 0.4)
+  coinbase-exchange!
   github-markup (~> 1.3)
   jaxxstorm-sensu-plugins-coinbase!
   pry (~> 0.10)
