@@ -1,7 +1,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'date'
-require_relative 'lib/sensu-plugins-puppet'
+require_relative 'lib/sensu-plugins-coinbase'
 
 Gem::Specification.new do |s|
   s.authors                = ['Lee Briggs']
@@ -27,10 +27,10 @@ Gem::Specification.new do |s|
 
   s.summary                = 'Sensu plugins for coinbase'
   s.test_files             = s.files.grep(%r{^(test|spec|features)/})
-  s.version                = SensuPluginsPuppet::Version::VER_STRING
+  s.version                = SensuPluginsCoinbase::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin', '~> 1.2'
-  s.add_runtime_dependency 'coinbase-exchange', '~ 0.1'
+  s.add_runtime_dependency 'coinbase-exchange', '~> 0.1'
 
   s.add_development_dependency 'bundler',                   '~> 1.7'
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
